@@ -25,9 +25,16 @@ public class HelloController {
     }
 
     @GetMapping
+<<<<<<< HEAD
     public ResponseDTO sayBye() {
         System.out.printf("Doo");
         System.out.println("Gone");
+=======
+    public ResponseDTO cry(){
+        System.out.println("This is for test 3rd..!!");
+        System.out.println("This is fo.!!");
+
+>>>>>>> branch_test2
         return service.response();
     }
 
