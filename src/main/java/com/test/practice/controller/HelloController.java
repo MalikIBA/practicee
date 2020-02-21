@@ -27,6 +27,8 @@ public class HelloController {
     @GetMapping
     public ResponseDTO cry(){
         System.out.println("This is for test 3rd..!!");
+        System.out.println("This is fo.!!");
+
         return service.response();
     }
 
