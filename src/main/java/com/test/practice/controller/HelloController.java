@@ -15,6 +15,7 @@ public class HelloController {
 
     @Autowired
     public HelloController(HelloService service){
+        System.out.println("This is 2nd test");
         this.service = service;
     }
 
