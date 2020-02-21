@@ -24,4 +24,10 @@ public class HelloController {
         return service.response();
     }
 
+    @GetMapping
+    public ResponseDTO cry(){
+        System.out.println("This is for test 3rd..!!");
+        return service.response();
+    }
+
 }
