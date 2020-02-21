@@ -15,6 +15,7 @@ public class HelloController {
 
     @Autowired
     public HelloController(HelloService service){
+        System.out.println("This is 2nd test");
         this.service = service;
     }
 
@@ -24,9 +25,14 @@ public class HelloController {
     }
 
     @GetMapping
+<<<<<<< HEAD
     public ResponseDTO sayBye() {
         System.out.printf("Doo");
         System.out.println("Gone");
+=======
+    public ResponseDTO cry(){
+        System.out.println("This is for test 3rd..!!");
+>>>>>>> branch_test1
         return service.response();
     }
 
