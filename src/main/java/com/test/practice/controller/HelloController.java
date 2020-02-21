@@ -23,4 +23,10 @@ public class HelloController {
         return service.response();
     }
 
+    @GetMapping
+    public ResponseDTO sayBye() {
+        System.out.printf("Doo");
+        return service.response();
+    }
+
 }
