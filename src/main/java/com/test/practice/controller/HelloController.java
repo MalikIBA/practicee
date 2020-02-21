@@ -14,7 +14,7 @@ public class HelloController {
     private HelloService service;
 
     @Autowired
-    public HelloController(HelloService service){
+    public HelloController(HelloService service) {
         System.out.println("This is 2nd test");
         this.service = service;
     }
@@ -28,10 +28,11 @@ public class HelloController {
     public ResponseDTO sayBye() {
         System.out.printf("Doo");
         System.out.println("Gone");
-
-        public ResponseDTO cry(){
-        System.out.println("This is for test 3rd..!!");
         return service.response();
     }
 
+    public ResponseDTO cry() {
+        System.out.println("This is for test 3rd..!!");
+        return service.response();
+    }
 }
