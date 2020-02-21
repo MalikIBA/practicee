@@ -26,6 +26,7 @@ public class HelloController {
     @GetMapping
     public ResponseDTO sayBye() {
         System.out.printf("Doo");
+        System.out.println("Gone");
         return service.response();
     }
 
